@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+<head>
+     
+    <link rel="shortcut icon" href="#" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="carousel/carousel.css">
+    
+    <!--Nuevo incorporamos font awesome-->    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" href="plugins/circle_social/socialCircle.css">
+    <!--plugin backToTop-->     
+    <link rel="stylesheet" href="plugins/Scroll-To-Top-Button-backToTop/dist/jquery-backToTop.min.css">
+    
+
+    <title>Probabilidad, estadística y género</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="#">Probabilidad, estadística y género</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>        
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="menuInicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="basededatos.html" id="menuAbout">Base de datos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="analisis.html" id="menuServicios">Análisis estadístico</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="retos.html" id="menuContacto">Retos por superar</a>
+                </li>    
+            </ul>
+        </div>            
+    </nav>
+</header>
+
+<style>
+  .text-container {
+    max-width: 900px; /* Ancho máximo de 800px */
+    margin: 0 auto;
+    font-family: Work Sans, serif;
+      color: black;
+       font-size: 20px;
+       }
+  h2 {
+         color: white;
+         font-family: Arial, sans-serif;
+      }
+
+      h3 {
+         color: black;
+         font-family: Helvetica, serif;
+      }
+        h1 {
+         font-family: Arial, sans-serif;
+      }
+</style>
+    
+<main role="main">
+    <section id="inicio">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Contenedor de slides -->
+    <div class="carousel-inner" style="max-height: 450px; display: flex; align-items: center;">
+
+        <!-- Slide 0 -->
+        <div class="carousel-item active">
+            <img src="img/Analisis.avif" style="width: 100%; height: 100%;">
+            <div class="container text-center">
+                <div class="carousel-caption text-left">
+                    <h3 class="pri-heading" style="color: black;">Análisis estadístico</h3>
+                                <p style="color: black;">Explorarando las posibles brechas de genero en la investigación científica en las áreas de probabilidad y estadística.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+
+                <!-- Required meta tags -->
+        <link rel="stylesheet" href="main.css">  
+      <div style="height:50px"></div>
+      
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css"/>
+    <!--datables estilo bootstrap 4 CSS-->  
+    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+</section>    
+
+<style>
+  .divisorpequeno-container {
+    max-width: 900px; /* Ancho máximo de 800px */
+    margin: 50px auto;
+</style>
+
+        <style>
+  .divisor-container {
+    max-width: 900px; /* Ancho máximo de 800px */
+    margin: 0 auto;
+</style>
+
+<style>
+  .center-image {
+     max-width: 900px; /* Ancho máximo de 800px */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+        
+<!-- aqui va la parte del analisis de proporción -->
+<div class="text-container">
+    <h3 class="sub-heading">Análisis estadístico: explorando el problema</h3>
+    <div class="espacio"></div>
+      <p>Esta sección se presenta un análisis estadístico diseñado para analizar y documentar las diferencias significativas entre hombres y mujeres en el ámbito de la investigación en las áreas de probabilidad y estadística en América Latina y el Caribe. El propósito principal de este análisis es identificar las disparidades existentes, con el fin de buscar soluciones efectivas y estrategias que aborden y reduzcan la desigualdad de género en este contexto.</p>
+    <p>Para realizar dicho análisis utilizamos pruebas de contraste de hipótesis las cuales son utilizadas para determinar si una declaración específica acerca de una característica de una población es respaldada por la evidencia empírica o no. El proceso de una prueba de hipótesis involucra dos hipótesis:</p>
+    <p style="text-align: center;">Hipótesis nula <strong>(H<sub>0</sub>):</strong> No existe diferencia significativa entre los grupos </p>
+    <p style="text-align: center;">Hipótesis alternativa <strong>(H<sub>1</sub>):</strong> Existe diferencia significativa entre los grupos</p>
+    
+    <p>Para determinar si la evidencia proporcionada por los datos respalda la hipótesis nula, utilizamos el <strong>p-value</strong>. Si el p-value es menor que un nivel de significancia de 0.05 se rechaza la hipótesis nula. Es decir, que existe una diferencia estadísticamente significativa entre los grupos.</p>
+    
+    <p>Con el fin de elegir la prueba estadistica adecuada en cada analisis se utilizó el test Shapiro para evaluar la normalidad en la distribución de nuestros datos y optar por una prueba paramétrica o no paramétrica.</p>
+</div>
+    <section id="sofew">
+ <div class="divisor-container" >
+<hr class="featurette-divider">
+ </div>
+
+                  </section>
+    <div class="text-container">
+        <h3 class="sec-heading">Proporción de mujeres dentro de los departamentos</h3>
+        <div class="espacio"></div>
+    <p>De acuerdo a nuestros registros, disponibles en la página <a href="basededatos.html" style="color: blue; text-decoration: underline;" target="_blank">Base de datos</a>, en las áreas de probabilidad y estadística solo el 33.3 % son mujeres. En la siguiente figura se muestra el porcentaje de mujeres dentro de cada departamento.</p>
+        </div>
+            
+    <div class="divisor-container" >
+    <div class="contenedorimage-container">
+  <img src="img/MujeresDepto.svg">
+        </div>
+        </div>
+
+    
+    
+    <div class="text-container">
+      <p> Una interpretación basada en una observación simple es que en la mayoría de los departamentos analizados, la proporción de mujeres investigadoras es menor al 50%, mientras que en el caso de los hombres es poco común encontrar un departamento con una proporción de investigadores masculinos inferior al 50%. Incluso varios departamentos están constituidos únicamente por hombres. Esto lo podemos apreciar mejor en el histograma en el cual se muestra la distribución de hombres y mujeres dentro de los departamentos. </p>
+      </div>
+    
+    <div class="divisor-container" >
+    <div class="contenedorimage-container">
+<img src="img/DensidadPorcentaje.svg" class="center-image" style="width:70%;">
+        </div>
+        </div>
+        
+<div class="text-container">
+    
+      <p>Para determinar si la diferencia  entre los porcentajes de hombres y mujeres es estadísticamente significativa. Realizaremos una <i>prueba de rango con signo de Wilcoxon de una muestra</i> considerando un valor &mu; = 50%. Nuestras hipótesis serán:</p>
+    <p><strong>H<sub>0</sub>:</strong> No existe diferencia significativa entre el promedio de mujeres dentro de los departamentos y el 50%<br>
+    <strong>H<sub>1</sub>:</strong> Existe diferencia significativa entre el promedio de mujeres dentro de los departamentos y el 50%</p>
+        <p>Se utiliza el valor del 50% como referencia, debido a que en un escenario hipotético donde no existiera desigualdad entre el número de mujeres y hombres, se esperaría que el porcentaje de mujeres fuera del 50%.</p>
+    
+    <p>En la siguiente figura se muestra la distribución de las mujeres dentro de los departamentos, la linea punteada representa la mediana observada en nuestra muestra y el resultado de la prueba el cual es un p-value = 1.59e−09. Por lo que rechazamos la hipótesis nula concluyendo que existe una diferencia estadísticamente significativa entre los porcentajes de mujeres observados dentro de los departamentos con el hipotético 50% que habría si no existiera desigualdad. Es decir, <strong>existe una diferencia estadísticamente significativa entre el número de hombres y mujeres dentro de los departamentos.</strong></p>
+      </div>
+        
+      <div class="divisor-container" >
+    <div class="contenedorimage-container">
+  <img src="img/WilcoxComparacion50.svg" class="center-image" style="width:70%;">
+    </div>
+          </div>
+    
+        
+<div class="text-container">
+    <h1 class="secgris-heading">Porcentaje de investigadoras por país</h1>
+    <div class="espacio"></div>
+      <p>De manera análoga, analizamos el porcentaje de mujeres realizando investigación en probabilidad o estadística, agrupados por país.</p>
+    </div>
+
+    <div class="divisor-container" >
+    <div class="contenedorimage-container">
+  <img src="img/PaisMujeres.svg" class="center-image" style="width:70%;">
+    </div>
+          </div>
+    
+
+    
+    <div class="espacio"></div>    
+<div class="text-container">
+     <p>En la gráfica se observa una variabilidad significativa en las tasas de participación de mujeres entre los países, con los porcentajes de mujeres más altos en Argentina y Perú, y el más bajo en Uruguay.</p>
+      
+      <p>Por su parte México con una representación de mujeres del 20%, se sitúa en línea con el promedio global, lo que indica que existe una oportunidad para mejorar la representación de las mujeres en estas áreas. Debido a que, como se muestra en el siguiente grafico, la mayoría de sus departamentos están conformados por investigadores masculinos.</p>
+    
+</div>        
+    
+    
+<div class="divisor-container" >
+    <div class="contenedorimage-container">
+        <img src="img/PastelUni.svg" class="center-image" style="width:100%;">
+    </div>
+</div>
+    
+    <section id= "doctorado">
+<div class="divisorpequeno-container" >
+    <hr class="featurette-divisorpequeno">
+    </div>
+   </section>
+
+    <div class="text-container">
+        <h3 class="sec-heading">Dependencia del grado académico con el género</h3>
+        <div class="espacio"></div>
+        <p>En este análisis, nos interesa conocer si existe asociación entre  el grado académico y el género, centrándonos específicamente en el doctorado. Para realizar este estudio, calculamos la proporción de investigadores con doctorado por género. En la siguiente imagen se muestra la proporción de hombres y mujeres que cuentan con este grado y los que no.</p>
+    </div>
+        
+ <div class="divisor-container" >
+    <div class="contenedorimage-container">
+  <img src="img/MosaicoDoc.svg" class="center-image" style="width:70%;">
+    </div>
+</div>
+        
+
+    <div class="text-container">
+      <p>Para conocer si la diferencia de proporciones observada entre hombres y mujeres con doctorado es estadisticamente significativa realizamos una prueba <i>odds ratio</i> considerando las siguientes hipótesis:</p>
+
+<p><strong>H<sub>0</sub>:</strong>  No existe diferencia significativa en la proporción de hombres y mujeres con doctorado<br>
+
+<strong>H<sub>1</sub>:</strong> Existe diferencia significativa en la proporción de hombres y mujeres con doctorado </p>
+        
+        <p>Los resultados de la prueba se muestran en la siguiente tabla:</p>
+        </div>
+    
+<style>
+  .table-container {
+    max-width: 900px; /* Ancho máximo de 900px */
+    margin: 0 auto;
+  }
+</style>
+    
+<div class="table-container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered mx-auto" style="width:85%">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Odds Ratio</th>
+              <th><i>p-value</i> (midp.exact)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Masculino</td>
+              <td>1.000</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Femenino</td>
+              <td>0.3941613</td>
+              <td>4.510833e-09</td>
+            </tr>			
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    
+    <div class="text-container">
+            <p>Durante la prueba, para utilizar como referencia a los investigadores masculinos con el grado doctorado, se les asignó un odds ratio de 1.0, mientras que el odds ratio resultante para el género femenino es de 0.3941613. Esto indica que la probabilidad de contar con este grado es significativamente menor para las mujeres en comparación con los hombres.</p>
+        <p>Además, el p-value resultante en la comparación de las proporciones entre hombres y mujeres con doctorado es extremadamente bajo, aproximadamente 4.51e-09. Por lo tanto, rechazamos la hipótesis nula, debido a que los resultados sugieren que <strong>existe una asociación significativa entre el grado académico doctorado y el género. Específicamente, las mujeres tienen menos probabilidades de contar con un doctorado en comparación con los hombres.</strong></p>
+    </div>
+
+    
+    <section id= "correlacion">
+<div class="divisorpequeno-container" >
+    <hr class="featurette-divisorpequeno">
+    </div>
+   </section>
+    
+    <div class="text-container" >    
+       <h3 class="sec-heading">Correlación entre el género y el rendimiento académico en los departamentos</h3>
+        <div class="espacio"></div>
+       <p>En este análisis, exploramos la dinámica de género en los departamentos mediante una matriz de correlación. Con el fin de obtener certeza estadística sobre la contribución de las mujeres en términos de publicaciones y citas dentro de cada departamento. Para ello generamos una matriz de correlación de Spearman utilizando las variables: “Porcentaje de mujeres”, “Porcentaje de hombres”, “Promedio de citas” y “Promedio de artículos”, en cada departamento. </p>
+        
+        <p>La correlación de Spearman nos permite conocer el grado de asociación entre dos variables y la dirección que toma esta relación, permitiéndonos identificar patrones y comprender la influencia de cada de género en la producción académica. Un coeficiente de correlación cercano a 1 o -1 indica una asociación fuerte, mientras que un valor cercano a 0 sugiere una relación escasa o nula.</p>
+        
+        <p>La matriz de correlación de Spearman se muestra en la siguiente figura.</p>
+        
+    </div>
+    
+<div class="divisor-container" >
+    <div class="contenedorimage-container">
+        <img src="img/Corelacion.svg" class="center-image" style="width:90%;">
+    </div>
+</div>
+
+<div class="text-container">
+      <p>En la diagonal de la imagen encontramos el nombre de la variable, en la parte inferior a la diagonal se encuentran las gráficas de cada correlación y en la parte superior a la diagonal aparece el coeficiente de correlación de Spearman.</p>
+    <p> En el primer caso, muestra la correlación entre el porcentaje de mujeres y hombres dentro de los departamentos. Este coeficiente representa a una correlación perfectamente negativa. Lo cual tiene todo el sentido, ya que entre mayor sea el porcentaje de hombres, menor será el porcentaje de mujeres y viceversa.
+    </p>
+      
+      <p>En el siguiente recuadro  encontramos el coeficiente de correlación entre la variable “Femenino” y “Citas”, con un valor de -0.10, caso contrario al coeficiente que resulta en la correlación de “Masculino” con “Citas”, el cual tiene un valor de 0.10. Tanto el coeficiente de las mujeres con la variable citas como el de hombres con citas es bastante cercano a cero, por lo que concluimos que la correlación del género con la variable citas es escasa o nula.</p>
+          
+    <p>Al continuar con el análisis de los datos de nuestra matriz de correlación, se observa una correlación negativa débil de -0.21 entre el porcentaje de mujeres y el promedio de artículos por departamento; mientras que en el caso del porcentaje de hombres, la correlación es ligeramente positiva con un coeficiente de 0.21. Por lo que parece existir una ligera correlación entre el número de mujeres u hombres dentro de un departamento con la producción de artículos académicos.</p>
+    
+    <p>En el último recuadro observamos el coeficiente de correlación entre las variables “Citas” y “Artículos”, el cual es de 0.87. Es decir, que existe una correlación positiva fuerte entre estas dos variables. Es decir, entre más artículos produzca un departamento, más citas recibirá.</p>
+    
+    <p>Concluimos que, <strong>no existe una correlación entre el porcentaje de mujeres en los departamentos y el promedio citas</strong> que tienen sin embargo <strong>existe una correlación ligeramente negativa entre el porcentaje de mujeres y la producción de artículos.</strong></p>
+          
+    </div>
+    
+     <section id="citart">
+    <div class="divisorpequeno-container" >
+    <hr class="featurette-divisorpequeno">
+    </div>
+    </section>
+         
+    <div class="text-container" >    
+       <h3 class="sec-heading">Comparación de citas y artículos entre géneros</h3>
+        <div class="espacio"></div>
+       <p>El objetivo de este análisis es determinar si existe una diferencia estadísticamente significativa entre el número de artículos que producen y el número de citas que reciben los investigadores masculinos y femeninos. Aunque en el análisis <a href="#correlacion">“Correlación entre el género y el rendimiento académico en los departamentos”</a> se agruparon a los investigadores masculinos y femeninos por departamento, en este análisis haremos uso de los datos de los investigadores(as) de manera individual.</p>
+        
+        <p>Para llevar a cabo este análisis, inicialmente creamos un gráfico de dispersión que representa  el número de artículos en el eje “<i>Y</i>” y el número de citas en el eje “<i>X</i>” para cada investigador o investigadora.  Para mejorar la visualización, aplicamos una transformación logarítmica a los datos. La ubicación de cada punto en el gráfico proporciona una visión intuitiva para conocer qué lugar ocupan los cifras de citas y artículos de las mujeres en comparación con las cifras de los hombres.</p>
+        
+    </div>
+    <div class="menosdosespacio"></div>
+<div class="divisor-container">
+    <div class="contenedorimage-container">
+        <iframe src="grafico.html" style="width: 100%; height: 80vh; max-width: 100%; border: 0;"></iframe>
+    </div>
+</div>
+<div class="menosdosespacio"></div>
+        
+    <div class="espacio"></div>
+      <div class="text-container" >    
+       
+       <p>En el gráfico de dispersión observamos que, en la cantidad de citas que reciben las mujeres no parece existir mucha diferencia en comparación con las citas recibidas por hombres. No obstante, se observa una ligera ventaja en la cantidad de artículos publicados por hombres en comparación con los publicados por mujeres. Para conocer si las diferencias observadas son estadísticamente significativas realizamos la prueba <i>W-Mann-Whitney</i>. Formulamos nuestras hipótesis nulas de la siguiente manera: </p>
+          
+         <p><strong>Prueba <i>W-Mann-Whitney</i> para comparar citas entre géneros</strong> <br>
+          <strong>H<sub>0</sub>:</strong> No existe diferencia significativa en el número de citas entre hombres y mujeres.<br>
+    <strong>H<sub>1</sub>:</strong> Existe diferencia significativa en el número de citas entre hombres y mujeres.</p>
+          
+        <p><strong>Prueba <i>W-Mann-Whitney</i> para comparar artículos entre géneros</strong> <br>
+          <strong>H<sub>0</sub>:</strong> No existe diferencia significativa en el número de artículos entre hombres y mujeres.<br>
+    <strong>H<sub>1</sub>:</strong> Existe diferencia significativa en el número de artículos entre hombres y mujeres.</p>
+          
+    </div>
+    
+    
+    
+    <div class="text-container" >    
+        <p>En las siguientes gráficas se presentan los resultados de las pruebas <i>W-Mann-Whitney</i> y los datos utilizados en cada una. Cada punto representa una observación, siendo los puntos rosados para las observaciones femeninas y los azules para las masculinas.</p>
+    </div>
+    
+    
+    
+            <!-- Contenedor principal -->
+    <div class="divisor-container" >
+     <div class="contenedorimage-container">
+     <div class="slider">
+        <img src="img/CitasIND.svg" class="center-image", style="width:89%;">
+        <img src="img/ArticulosIND.svg" class="center-image", style="width:89%;">
+        
+        <button class="prev" onclick="prevImage()">&#9665; Ant.</button>
+        <button class="next" onclick="nextImage()">Sig. &#9655;</button>
+    </div>
+    </div>
+    </div>
+
+    
+    
+    <div class="text-container" >    
+        <p>En la prueba <i>W-Mann-Whitney</i> para comparar citas entre géneros obtenemos un <i>p−value</i> = 0.06 por lo que aceptamos la hipótesis nula, es decir que no contamos con evidencia estadística suficiente para concluir que exista una diferencia significativa entre los géneros.</p>
+        
+        <p>Mientras que en la prueba <i>W-Mann-Whitney</i> para comparar artículos entre géneros obtenemos un <i>p − value</i> = 0.02. Por lo tanto rechazamos la hipótesis nula, concluyendo que existe una diferencia estadísticamente significativa entre el número de artículos de hombres y mujeres.</p>
+        
+        <p>Como resultado tenemos que <strong> no existe una diferencia estadísticamente significativa en el número de citas entre hombres y mujeres.</strong> No obstante, <strong>existe diferencia significativa en el número de artículos publicados entre hombres y mujeres.</strong></p>
+    </div>
+    <section id="indcit">
+    <div class="divisorpequeno-container" >
+    <hr class="featurette-divisorpequeno">
+    </div>
+    </section>
+    <div class="text-container">
+        <h3 class="pri-heading">Independencia del género y el éxito en citaciones</h3>
+        <div class="espacio"></div>
+        <p>En este análisis, nos interesa conocer si el éxito en términos de citaciones está asociado al género del autor. Para realizar este estudio, comenzaremos calculando cuartiles de la variable “Citas” respecto al total de investigadores, estableciendo el umbral en 688 citas, que representa el límite del cuartil 75%. Por lo que clasificamos a los investigadores e investigadoras en dos niveles: “Alto” para aquellos cuya cantidad de citas supera las 688 citas, y “No alto” para aquellos que se encuentran por debajo de este umbral.</p>
+        
+        <p>En la siguiente imagen se muestra el porcentaje de hombres y mujeres dentro de las categorías “Alto” y “No alto”.</p>
+    </div>
+        
+<div class="divisor-container" >
+    <div class="contenedorimage-container">
+        <img src="img/CategoriaCitas.svg" class="center-image", style="width:70%;">
+    </div>
+</div>
+    
+    <div class="text-container">    
+        <p>Calculamos la diferencia de proporciones entre los géneros</p>
+    <p style="text-align: center;"> Hombres<sub> alto</sub>  -  Mujeres<sub> alto</sub> = 25.8% - 23.0% = 2.8%</p>
+        </div>
+
+    <div class="text-container">
+      <p>En notación decimal la diferencia de proporciones es de <strong>0.028</strong>. Para conocer si la diferencia de proporciones observada en la categoría “Alto” entre hombres y mujeres es estadisticamente significativa utilizamos el método bootstrap considerando las siguientes hipótesis:</p>
+
+<p><strong>H<sub>0</sub>:</strong> No existe diferencia significativa entre la proporción de hombres y mujeres en la categoría alto<br>
+
+<strong>H<sub>1</sub>:</strong> Existe diferencia significativa entre la proporción de hombres y mujeres en la categoría alto </p>
+        
+        <p>Para determinar si la diferencia observada en nuestro conjunto de datos es consistente con la hipótesis nula, de que no existe ninguna asociación entre el nivel de citas y el género, comparamos dicha diferencia con el tipo de diferencias que veriamos si las variables fueran realmente independientes. Para esto, mediante simulación, generamos conjunto de datos tomando a la hipótesis nula como cierta.</p>
+        
+        <p>Para generar estos conjuntos fijamos a la variable género, y permutamos los datos de la variable nivel de citas. Esta variable contiene un 25% de etiquetas en la categoría “Alto” y un 75% en la categoría “No alto”. Después, repartimos aleatoriamente estas etiquetas entre los hombres y mujeres de nuestra muestra. En este momento no tenemos control sobre a quienes (hombre o mujer) les tocarán las etiquetas con la categoria alto. De esta manera, asguramos la independencia de las variables.</p>
+            
+            <p>En la siguiente tabla se presenta una muestra del primer conjunto. </p>
+        </div>
+    
+<style>
+  .table-container {
+    max-width: 900px; /* Ancho máximo de 900px */
+    margin: 0 auto;
+  }
+</style>
+    
+<div class="table-container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered mx-auto" style="width:85%">
+            <thead>
+                 <tbody>
+                        <tr>
+                            <th>Nivel</th>
+    <th>Género</th>
+    <th>Conjunto</th>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Masculino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td><strong>Alto</strong></td>
+    <td>Masculino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Masculino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Masculino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Masculino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Femenino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Femenino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td><strong>Alto</strong></td>
+    <td>Femenino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Femenino</td>
+    <td>1</td>
+  </tr>
+  
+                    </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-container">
+            <p>Al realizar un segundo conjunto obtenemos un resultado diferente.</p>
+    </div>
+    
+<div class="table-container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered mx-auto" style="width:85%">
+            <thead>
+                         <tbody>
+                        <tr>
+                            <th>Nivel</th>
+    <th>Género</th>
+    <th>Conjunto</th>
+  </tr>
+  <tr>
+    
+    <td><strong>Alto</strong></td>
+    <td>Masculino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Masculino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Masculino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td><strong>Alto</strong></td>
+    <td>Masculino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Masculino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Femenino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td>NoAlto</td>
+    <td>Femenino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td><strong>Alto</strong></td>
+    <td>Femenino</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    
+    <td><strong>Alto</strong></td>
+    <td>Femenino</td>
+    <td>2</td>
+  </tr>
+  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+      
+    
+    <div class="text-container">
+            <p> Generamos 500 conjutos como estos, los cuales son similares al original, pero generados como si fueran de un mundo donde no existe asociación entre tener un número alto de citas y el género. </p>
+        <p>A cada conjunto de datos le calculamos el estadístico muestral, es decir la diferencia de proporciones entre géneros del mismo modo que lo hicimos con el conjunto original. </p>
+    </div>
+
+
+<style>
+  .htable-container {
+    max-width: 900px; /* Ancho máximo de 800px */
+    margin: 0 auto;
+</style>
+<div class="htable-container" >
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="table-responsive mx-auto">
+               <table class="table table-striped table-bordered" style="width:85%">
+                    <thead>
+                         <tbody>
+                       <tr>
+    <th>Conjunto</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>...</th>
+    <th>498</th>
+    <th>499</th>
+    <th>500</th>
+  </tr>
+  <tr>
+    <td>Diferencia</td>
+    <td>0.01</td>
+    <td>-0.02</td>
+    <td>0.05</td>
+    <td>...</td>
+    <td>0.01</td>
+    <td>-0.01</td>
+    <td>0.04</td>
+  </tr>
+  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="text-container">
+            <p> Con estas 500 diferencias de proporciones calculadas, realizamos una grafica de densidad nula. Finalmente trazamos, en color rojo, la diferencia observada en el conjunto de datos original, la cual es de 0.028.</p>
+    </div>
+    
+<div class="divisor-container" >
+    <div class="contenedorimage-container">
+        <img src="img/DensidadNulaCitasConLineas.svg" class="center-image", style="width:70%;">
+    </div>
+</div>
+    
+    <div class="text-container">
+       <p> Notamos que la diferencia observada es muy parecida al tipo de diferencias que veríamos si las variables fueran independientes y se encuentra dentro del intervalo de confianza del 95 % cuyos límites (-0.073, 0.081) se determinaron mediante el cálculo de los percentiles 2.5 y 97.5 de la variable “Diferencia”. Por lo que aceptamos la hipótesis nula, ya que estos datos constituyen evidencia de que <strong>no existe ninguna asociación entre tener un número alto de citas y el género.</strong></p>
+    </div>
+    <div class="espacio"></div>
+    
+    
+<style>
+    .pdftext-container {
+        text-align: right; /* Alinea el texto a la derecha dentro del contenedor */
+         max-width: 900px; /* Ancho máximo de 800px */
+    margin: 0 auto;
+    font-family: Work Sans, serif;
+      color: black;
+       font-size: 20px;
+   
+    }
+</style>
+
+    
+    <div class="pdftext-container">
+            <a href="img/tesis.pdf" download="Tesis_JorgeSMartinezVillafan.pdf" target="_blank">Descarga el análisis estadístico completo (PDF)</a>
+        </div>
+    
+    
+    
+    
+
+<div class="divisor-container" >
+<hr class="featurette-divider">
+ </div>
+    
+
+        
+<!--bloque de contacto -->
+<section id="contact">
+  <div class="container">
+    <h2></h2>
+    <p>Para obtener más información o hacer preguntas, puedes ponerte en contacto con nosotros:</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:aleatorias.normales@gmail.com">aleatorias.normales@gmail.com</a>
+      </div>
+      <div class="contact-item">
+         <i class="fa fa-globe"></i>
+        <a href="https://sites.google.com/view/aleatorias-normales" target="_blank">Aleatorias y Normales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+    
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script src="jquery/jquery.easing.min.js"></script>    
+<script src="popper/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- animateScroll JS -->
+<script src="plugins/animatescroll/animatescroll.min.js"></script>
+<!-- circle social JS -->    
+<script src="plugins/circle_social/socialCircle.js"></script>    
+<!--plugin backToTop-->
+<script src="plugins/Scroll-To-Top-Button-backToTop/dist/jquery-backToTop.min.js"></script>    
+<script src="codigo.js"></script>        
+    
+<script type="text/javascript" src="datatables/datatables.min.js"></script>    
+<script type="text/javascript" src="main.js"></script>  
+    
+</body>
+</html>
