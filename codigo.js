@@ -36,8 +36,8 @@ $(document).ready(function(){
         // enable the back to top button
         enabled: true, 
         // alto y ancho del boton 
-        height: 70,  
-        width: 70,
+        height: 50,  
+        width: 50,
         // icon (desde fontawesome)
         icon: 'fas fa-chevron-up',
         // margins 
@@ -52,6 +52,8 @@ $(document).ready(function(){
         // z-index
         zIndex: 999    
     });
+    
+
     
 });    
 
